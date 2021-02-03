@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
                            .then( (accessTokenResponse: AccessTokenResponse) => {
                              this.accessToken = accessTokenResponse;
                              localStorage.setItem("token", String(this.accessToken.access_token));
+                             this.router.navigate(['/home']);
                            }).catch((param: any) =>{
                               console.log(param);
                            });

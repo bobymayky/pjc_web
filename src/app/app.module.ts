@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login/login.component';
 import { PersistanceService } from './localstorage.service';
 import { Dominio } from './utilitarios/Dominio.model';
+import { HomeComponent } from './home/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
